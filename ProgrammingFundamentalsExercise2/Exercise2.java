@@ -14,6 +14,11 @@ public class Exercise2 {
         */
         //__Name__ is a __adjective__ __noun__.  They are always __adverb__ __verb__.
 
+        int age = 12;
+        if (age < 13) {
+          //Insert exit code
+          console.printf("Sorry you must be at least 13 to use this program.\n");
+        }
         String name = console.readLine("Enter your name: ");
         String adjective = console.readLine("Enter an adjective: ");
         String noun = console.readLine("Enter a noun: ");
