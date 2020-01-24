@@ -22,15 +22,15 @@ public class Exercise2 {
         String name = console.readLine("Enter your name: ");
         String adjective = console.readLine("Enter an adjective: ");
         String noun;
+        boolean isInvalidWord;
         /* || two pipe means or */
         do {
             noun = console.readLine("Enter a noun: ");
-            if (noun.equalsIgnoreCase("dork") || 
-                noun.equalsIgnoreCase("jerk")){
+            isInvalidWord = noun.equalsIgnoreCase("dork") || noun.equalsIgnoreCase("jerk");
+            if (isInvalidWord){
                 console.printf("That language is not allowed.  Try again. \n\n");
-                System.exit(0);
-                }
-        } while(noun.equalsIgnoreCase("dork") || noun.equalsIgnoreCase("jerck"));
+            }
+        } while(noun.equalsIgnoreCase("dork") || noun.equalsIgnoreCase("jerk"));
         String adverb = console.readLine("Enter an adverb: ");
         String verb = console.readLine("Enter a verb: ");
 
