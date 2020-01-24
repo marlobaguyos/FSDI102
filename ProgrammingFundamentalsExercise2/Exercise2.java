@@ -1,42 +1,28 @@
 package ProgrammingFundamentalsExercise2;
 
-import java.io.Console;
+import java.util.Scanner;
 
-public class Exercise2 {
-    
+public class Exercise2 { 
+
+    private static Scanner sc;
+
     public static void main(String[] args) {
-        Console console = System.console();
-        /*  Some terms:
-            noun - Person, place or thing
-            verb - An action
-            adjective - A description used to modify or describe a noun
-            Enter your amazing code here!
-        */
-        //__Name__ is a __adjective__ __noun__.  They are always __adverb__ __verb__.
-
-        int age = 12;
-        if (age < 13) {
-          //Insert exit code
-        console.printf("Sorry you must be at least 13 to use this program.\n");
-        }
-        String name = console.readLine("Enter your name: ");
-        String adjective = console.readLine("Enter an adjective: ");
-        String noun;
-        boolean isInvalidWord;
-        /* || two pipe means or */
-        do {
-            noun = console.readLine("Enter a noun: ");
-            isInvalidWord = noun.equalsIgnoreCase("dork") || noun.equalsIgnoreCase("jerk");
-            if (isInvalidWord){
-                console.printf("That language is not allowed.  Try again. \n\n");
+        sc = new Scanner(System.in);
+        
+        System.out.println("What is your name: ");
+        String name = sc.nextLine();
+            if (name == " ") {
+                System.out.println("You did not print anything.  Please Try again");
             }
-        } while(noun.equalsIgnoreCase("dork") || noun.equalsIgnoreCase("jerk"));
-        String adverb = console.readLine("Enter an adverb: ");
-        String verb = console.readLine("Enter a verb: ");
+        System.out.println("What is your age: ");
+        int age = Integer.parseInt(sc.nextLine());
 
-        console.printf("Your TreeStory:\n---------------------\n");
-        console.printf("%s is a %s %s. ", name, adjective, noun);
-        console.printf("They are always %s %s.\n", adverb, verb);
+        System.out.println("What is your current salary? ");
+        double salary = Double.parseDouble(sc.nextLine());
+
+        String ballerStatus = name + " is " + age + " years of age making $" + salary + " .  ***Baller Status***.";
+        System.out.print(ballerStatus);
     }
-    
 }
+
+
