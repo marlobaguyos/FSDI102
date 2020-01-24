@@ -13,7 +13,5 @@ public static void main(String arg[]){
 
     //String name = "Marlo";
     System.out.println("Welcome " + name);
-
-
     }
 }
