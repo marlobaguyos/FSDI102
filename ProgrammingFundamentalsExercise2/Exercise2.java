@@ -26,7 +26,7 @@ public class Exercise2 {
         do {
             noun = console.readLine("Enter a noun: ");
             if (noun.equalsIgnoreCase("dork") || 
-                noun.equalsIgnoreCase("jerk"){
+                noun.equalsIgnoreCase("jerk")){
                 console.printf("That language is not allowed.  Try again. \n\n");
                 System.exit(0);
                 }
