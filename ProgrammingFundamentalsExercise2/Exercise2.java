@@ -17,11 +17,20 @@ public class Exercise2 {
         int age = 12;
         if (age < 13) {
           //Insert exit code
-          console.printf("Sorry you must be at least 13 to use this program.\n");
+        console.printf("Sorry you must be at least 13 to use this program.\n");
         }
         String name = console.readLine("Enter your name: ");
         String adjective = console.readLine("Enter an adjective: ");
-        String noun = console.readLine("Enter a noun: ");
+        String noun;
+        /* || two pipe means or */
+        do {
+            noun = console.readLine("Enter a noun: ");
+            if (noun.equalsIgnoreCase("dork") || 
+                noun.equalsIgnoreCase("jerk"){
+                console.printf("That language is not allowed.  Try again. \n\n");
+                System.exit(0);
+                }
+        } while(noun.equalsIgnoreCase("dork") || noun.equalsIgnoreCase("jerck"));
         String adverb = console.readLine("Enter an adverb: ");
         String verb = console.readLine("Enter a verb: ");
 
