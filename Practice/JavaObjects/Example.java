@@ -27,10 +27,11 @@ public class Example {
 		if (dispenser.isEmpty()) {
 			System.out.printf("Ate all the Pez \n");
 		}
-		dispenser.fill(4);
-		dispenser.fill(2);
-		while (dispenser.dispense()) {
-			System.out.println("Chomp!! \n");
-		}
+		dispenser.fill(400);
+		System.out.println("This will never happen");
+		// dispenser.fill(2);
+		// while (dispenser.dispense()) {
+		// 	System.out.println("Chomp!! \n");
+		//}
 	}
 }
