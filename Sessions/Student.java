@@ -1,13 +1,10 @@
 package Sessions;
 
-public class Student {
-	public String name;
-	public int age;
+public class Student extends User {
 	public int cohortNumber;
 
 	public Student(String name, int age, int cohortNumber) {
-		this.name = name;
-		this.age = age;
+		super(name, age);
 		this.cohortNumber = cohortNumber;
 	}
 
