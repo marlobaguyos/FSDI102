@@ -10,8 +10,8 @@ public class Animal {
 		this.type = type;
 	}
 
-	public void attack(Student s) {
-		System.out.println(this.name + " " + this.type + " is attacking ... " + s.name);
+	public void attack(Student S) {
+		System.out.println(this.name + " " + this.type + " is attacking ... " + S.name);
 	}
 
 }
