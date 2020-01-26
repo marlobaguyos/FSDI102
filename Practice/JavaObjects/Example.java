@@ -11,8 +11,26 @@ public class Example {
 		PezDispenser dispenser = new PezDispenser("Yoda");
 
 		System.out.printf("The dispenser is %s %n", dispenser.getCharacterName());
+		if(dispenser.isEmpty()) {
+			System.out.println("Dispenser is empty");
+		}
 
 		System.out.printf("Filling the dispenser with delicious PEZ... %n");
 		dispenser.fill();
+		if(!dispenser.isEmpty()) {
+			System.out.printf("Dispenser is full");
+		}
+
+		while (dispenser.dispense()) {
+			System.out.printf("Chomp! \n");
+		}
+		if (dispenser.isEmpty()) {
+			System.out.printf("Ate all the Pez \n");
+		}
+		dispenser.fill(4);
+		dispenser.fill(2);
+		while (dispenser.dispense()) {
+			System.out.println("Chomp!! \n");
+		}
 	}
 }
