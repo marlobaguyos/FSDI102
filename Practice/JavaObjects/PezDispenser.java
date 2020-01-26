@@ -12,16 +12,16 @@ class PezDispenser {
 		pezCount = 0;
 	}
 
+	public void fill() {
+		fill(MAX_PEZ);
+	}
+
 	public void fill(int pezAmount) {
 		int newAmount = pezCount = pezAmount;
 		if (newAmount > MAX_PEZ) {
 			throw new IllegalArgumentException("Too many Pez!!!!!!");
 		}
 		pezCount = newAmount;
-	}
-
-	public void fill() {
-		fill(MAX_PEZ);
 	}
 
 	public boolean dispense() {

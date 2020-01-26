@@ -27,11 +27,14 @@ public class Example {
 		if (dispenser.isEmpty()) {
 			System.out.printf("Ate all the Pez \n");
 		}
-		dispenser.fill(400);
-		System.out.println("This will never happen");
-		// dispenser.fill(2);
-		// while (dispenser.dispense()) {
-		// 	System.out.println("Chomp!! \n");
-		//}
+
+		try {
+			dispenser.fill(400);
+			System.out.println("This will never happen");
+		} catch (IllegalArgumentException iae) {
+			System.out.println("Whoa there!");
+			System.out.printf("The error was %s \n", iae.getMessage());
+		}
+		
 	}
 }
