@@ -1,11 +1,11 @@
-package Practice;
+package Practice.Challenges;
 
 import java.io.Console;
 
 public class Challenge2 {
     
-    public static void main(String[] args) {
-        Console console = System.console();
+    public static void main(final String[] args) {
+        final Console console = System.console();
         /*  Some terms:
             noun - Person, place or thing
             verb - An action
@@ -14,13 +14,13 @@ public class Challenge2 {
         */
         //__Name__ is a __adjective__ __noun__.  They are always __adverb__ __verb__.
 
-        int age = 12;
+        final int age = 12;
         if (age < 13) {
           //Insert exit code
         console.printf("Sorry you must be at least 13 to use this program.\n");
         }
-        String name = console.readLine("Enter your name: ");
-        String adjective = console.readLine("Enter an adjective: ");
+        final String name = console.readLine("Enter your name: ");
+        final String adjective = console.readLine("Enter an adjective: ");
         String noun;
         boolean isInvalidWord;
         /* || two pipe means or */
@@ -31,8 +31,8 @@ public class Challenge2 {
                 console.printf("That language is not allowed.  Try again. \n\n");
             }
         } while(noun.equalsIgnoreCase("dork") || noun.equalsIgnoreCase("jerk"));
-        String adverb = console.readLine("Enter an adverb: ");
-        String verb = console.readLine("Enter a verb: ");
+        final String adverb = console.readLine("Enter an adverb: ");
+        final String verb = console.readLine("Enter a verb: ");
 
         console.printf("Your TreeStory:\n---------------------\n");
         console.printf("%s is a %s %s. ", name, adjective, noun);

@@ -1,4 +1,4 @@
-package Practice;
+package Practice.Challenges;
 
 import java.io.Console;
 
