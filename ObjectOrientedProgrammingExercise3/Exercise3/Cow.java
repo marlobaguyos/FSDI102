@@ -1,7 +1,5 @@
 package ObjectOrientedProgrammingExercise3.Exercise3;
 
-import java.util.jar.Attributes.Name;
-
 //1. Create a new class named 'Cow'.
 class Cow {
 
