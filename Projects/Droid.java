@@ -25,8 +25,6 @@ public class Droid {
   }
 
 
-
-
   public static void main(String[] args) {
     Droid codey = new Droid("Codey");
     Droid marlo = new Droid("marlo");
