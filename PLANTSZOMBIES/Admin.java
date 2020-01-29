@@ -18,6 +18,11 @@ public class Admin {
 		listElements.add(new Zombie("Peter"));
 		listElements.add(new SilverBallon("Silver1"));
 		listElements.add(new SilverBallon("Silver1"));
+		listElements.add(new Zombie("Lion"));
+		listElements.add(new Zombie("TigerZombie"));
+		listElements.add(new Zombie("Bad"));
+
+		
 
 		TimerTask timerTask = new TimerTask() {
 			public void run() {
@@ -33,6 +38,7 @@ public class Admin {
 			
 		for(GraphicObject go: listElements) {
 			go.move();
+			System.out.println("*********************************");
 		}
 		System.out.println("----------------------------");
 	}
