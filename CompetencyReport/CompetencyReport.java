@@ -1,6 +1,6 @@
-package Sessions;
+package CompetencyReport;
 
-public class Prog7 {
+public class CompetencyReport {
 
 	public static void main(String[] args) {
 		int[] numbers = {3, 5, 7, 6, 3, 2, 9};
